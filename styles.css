@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 32px 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+
+h1 {
+    text-align: center;
+    color: #2d3a4b;
+    margin-bottom: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1976d2;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #0d47a1;
+}
+
+.product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.product-form label {
+    font-weight: 500;
+    color: #2d3a4b;
+}
+
+.product-form input[type="text"],
+.product-form input[type="number"],
+.product-form textarea,
+.product-form select {
+    padding: 8px 10px;
+    border: 1px solid #cfd8dc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f9fafb;
+    transition: border 0.2s;
+}
+
+.product-form input[type="text"]:focus,
+.product-form input[type="number"]:focus,
+.product-form textarea:focus,
+.product-form select:focus {
+    border: 1.5px solid #1976d2;
+    outline: none;
+}
+
+.product-form input[type="file"] {
+    border: none;
+    background: none;
+}
+
+.product-form button {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.product-form button:hover {
+    background: #0d47a1;
+}
+
+a {
+    display: inline-block;
+    margin-top: 24px;
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #0d47a1;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+}
+
+.products-table th, .products-table td {
+    border: 1px solid #e0e0e0;
+    padding: 10px 8px;
+    text-align: left;
+}
+
+.products-table th {
+    background: #f1f8ff;
+    color: #1976d2;
+    font-weight: 600;
+}
+
+.products-table tbody tr:nth-child(even) {
+    background: #f9fafb;
+}
+
+@media (max-width: 700px) {
+    .container {
+        max-width: 98vw;
+        padding: 16px 4vw;
+    }
+    .products-table th, .products-table td {
+        font-size: 0.95rem;
+        padding: 7px 4px;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+}
